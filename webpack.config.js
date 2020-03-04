@@ -1,4 +1,3 @@
-Learn more or give us feedback
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 

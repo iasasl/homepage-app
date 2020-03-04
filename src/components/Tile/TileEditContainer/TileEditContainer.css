@@ -1,0 +1,5 @@
+.TileEditContainer {
+    display: flex;
+    flex-basis: auto;
+    max-width: 220px;
+}
