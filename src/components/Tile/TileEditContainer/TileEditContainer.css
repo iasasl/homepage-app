@@ -1,5 +1,7 @@
 .TileEditContainer {
     display: flex;
-    flex-basis: auto;
-    max-width: 220px;
+    /* flex-basis: auto; */
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 100%;
 }

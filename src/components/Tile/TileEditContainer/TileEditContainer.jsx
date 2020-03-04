@@ -12,8 +12,9 @@ function TileEditContainer() {
     const [hiddenBox, setHiddenBox] = useState(true)
 
     const handleClick = () => {
-        setLink(inputField)
-        setInputField('')
+        setLink(inputField);
+        setInputField('');
+        setHiddenBox(true)
     }
 
     const handleKeyPress = (event) => {
@@ -31,7 +32,7 @@ function TileEditContainer() {
         return `http://${link}`;
     }
 
-    return(
+    return (
         <div className="TileEditContainer">
             <Link href={buildHref(link)}>{link}</Link>
             <Button onClick={handleEditButtonClick}>

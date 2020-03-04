@@ -1,0 +1,6 @@
+.TilesContainer {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-self: center;
+}
