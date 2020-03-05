@@ -33,7 +33,7 @@ function TileEditContainer() {
     }
 
     return (
-        <div className="TileEditContainer">
+        <Link className="TileEditContainer">
             <Link href={buildHref(link)}>{link}</Link>
             <Button onClick={handleEditButtonClick}>
                 <CreateIcon />
@@ -48,7 +48,7 @@ function TileEditContainer() {
                 />
                 <Button variant="outlined" onClick={handleClick}>accept</Button>
             </Box>
-        </div>
+        </Link>
     )
 }
 

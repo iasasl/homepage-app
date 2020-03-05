@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDom from "react-dom";
-import TilesContainer from "./containers/TilesContainer";
+import App from "./App";
 
-ReactDom.render(<TilesContainer />, document.getElementById("root"));
+ReactDom.render(<App />, document.getElementById("root"));

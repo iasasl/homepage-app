@@ -1,5 +1,6 @@
 .Tile {
     width: 20%;
+    margin-bottom: 16px;
     border: 1px solid grey;
     border-radius: 3px;
 }

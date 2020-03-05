@@ -5,16 +5,20 @@ import Tile from '../components/Tile/Tile'
 import './TilesContainer.css'
 
 const TilesContainer = () => {
-    const props = [{name: 'youtube.com'},{name: 'vk.com'},{name: 'google.com'}];
+    const [tilesList, setTilesList] = useState([]);
 
-    const content = props.map((item, index) => <Tile key={index}>{item.name}</Tile>);
+    const content = tilesList.map(item => <Tile key={item.id}>{item.name}</Tile>);
+
+    const addTile = () => {
+        setTilesList([...tilesList, {name: ''}]);
+    }
 
     return (
         <div className="TilesContainer">
-            <Button>
+            <Button onClick={addTile} className="AddButton">
                 <AddIcon />
             </Button>
-            {content}
+            <div className="Tiles">{content}</div>
         </div>
     )
 }
