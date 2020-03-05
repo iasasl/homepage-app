@@ -34,19 +34,21 @@ function TileEditContainer() {
 
     return (
         <Link className="TileEditContainer">
-            <Link href={buildHref(link)}>{link}</Link>
-            <Button onClick={handleEditButtonClick}>
+            <Link className="LinkSpan" href={buildHref(link)}>{link}</Link>
+            <Button onClick={handleEditButtonClick} className="EditButton">
                 <CreateIcon />
             </Button>
             <Box hidden={hiddenBox}>
-                <TextField 
-                    label="New link"   
-                    onChange={inputField => setInputField(inputField.target.value)}
-                    onKeyPress={handleKeyPress}
-                    variant="filled" 
-                    value={inputField}
-                />
-                <Button variant="outlined" onClick={handleClick}>accept</Button>
+                <Box className="NewLinkBox">
+                    <TextField 
+                        label="New link"   
+                        onChange={inputField => setInputField(inputField.target.value)}
+                        onKeyPress={handleKeyPress}
+                        variant="filled" 
+                        value={inputField}
+                    />
+                    <Button variant="outlined" onClick={handleClick}>accept</Button>
+                </Box>
             </Box>
         </Link>
     )

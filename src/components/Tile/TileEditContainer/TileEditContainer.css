@@ -1,8 +1,24 @@
 .TileEditContainer {
+    position: relative;
     display: flex;
-    /* flex-basis: auto; */
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
     max-width: 100%;
+    min-height: 23vh;
+}
+
+.EditButton {
+    position: absolute!important;
+    right: 0;
+    top: 0;
+}
+
+.NewLinkBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.LinkSpan {
+    font-size: 5vh;
 }

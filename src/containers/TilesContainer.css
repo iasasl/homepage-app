@@ -4,12 +4,6 @@
     width: 70%;
 }
 
-.AddButton {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-}
-
 .Tiles {
     display: flex;
     flex-wrap: wrap;
